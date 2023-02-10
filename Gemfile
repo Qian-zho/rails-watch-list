@@ -6,8 +6,15 @@ ruby "3.1.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
+gem "autoprefixer-rails"
+gem "font-awesome-sass", "~> 6.1"
+gem "simple_form", github: "heartcombo/simple_form"
+gem "sassc-rails"
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
+
+gem "dotenv-rails", groups: [:development, :test]
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
@@ -66,3 +73,5 @@ end
 
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+
+gem "cloudinary"
